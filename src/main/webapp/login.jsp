@@ -21,6 +21,7 @@
 		</style>
 	</head>
 	<body>
+	<body style="background-color:#F0E68C;">
 		<h1>Login Page</h1>
 		<form action="LoginServlet" method="Post">
 			<table id="Test" cellspacing="20" align="center">
