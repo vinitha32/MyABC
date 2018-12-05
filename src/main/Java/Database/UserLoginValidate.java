@@ -19,6 +19,8 @@ public class UserLoginValidate {
             ps.setString(2,password);
             ResultSet rs=ps.executeQuery();
             if(rs.next()){
+
+
                 Usernew pObject=new Usernew();
                 pObject.setUsername(rs.getString(1)); //if the values exist in db then
                 pObject.setPassword(rs.getString(2));     // set them to setters and getters and them to list and return the list finally

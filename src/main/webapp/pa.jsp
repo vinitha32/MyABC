@@ -1,4 +1,8 @@
 <html lang="en">
+
+    <div style="float: right">
+          <a href="logout.jsp"> <font size="4" font color="red">LOGOUT</a></font>
+    </div>
 <head>
   <meta charset="UTF-8">
   <title>HTML5 Canvas</title>

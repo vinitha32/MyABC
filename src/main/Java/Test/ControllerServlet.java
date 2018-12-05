@@ -30,23 +30,24 @@ public class ControllerServlet extends HttpServlet {
         try {
 
             String username = req.getParameter("username"); //getting all the values from user
-            String pass = req.getParameter("password");
+
+            String password = req.getParameter("password");
             String email = req.getParameter("email");
             //getting all the values from index.jsp
 
             Usernew pObject = new Usernew();
 
             pObject.setUsername(username);        //setting up the received values from index.jsp to setters and getters
-            pObject.setPassword(pass);
+            pObject.setPassword(password);
             pObject.setEmail(email);
 
 
             int status = SaveUser.save(pObject); // sending the pObject values to save method
             if (status > 0) {
                 //executes if the details are added to database
-                out.print("<h2 align='center'>SuccessFully Registered </h2>"); // if successfully executes save method
-                out.print("<a align='center'href='login.jsp'>Login Here</a>");
-
+                //out.print("<h2 align='center'>SuccessFully Registered </h2>"); // if successfully executes save method
+                //out.print("<a align='center'href='login.jsp'>Login Here</a>");
+                req.getRequestDispatcher("Registration.jsp").include(req, resp);
 
             } else {
                 req.getRequestDispatcher("index.jsp").include(req, resp);

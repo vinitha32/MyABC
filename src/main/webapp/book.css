@@ -1,6 +1,4 @@
-
-
-
+.book{width:600px;height:400px;position:relative;perspective:1500px;}
 .book .page{position:absolute;top:0;width:50%;height:100%;color:#fff;font-size:80px;transition:all .8s ease;transform-style: preserve-3d;transform:rotateY(0deg);backface-visibility:hidden;z-index:1;}
 .book .page.left{left:0;transform-origin:right;}
 .book .page.right{right:0;transform-origin:left;}
@@ -25,7 +23,6 @@
 .book .page.pink{background:pink;}
 .book .page.purple{background:purple;}
 
-.
 
 .btns{text-align:center;width:600px;margin:20px 0;}
 .btns button{font-size:30px;margin:0 10px;padding:10px 30px;}

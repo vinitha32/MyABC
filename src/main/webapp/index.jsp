@@ -208,9 +208,21 @@
         .grass{
             position: relative;
             top:600px;
-            background-color:#00ff00;
+            background-color:green;
             width: 100%;
             height:100%;
+        }
+        .bird {
+          background-image: url('bird.svg');
+          background-size: auto 100%;
+          width: 88px;
+          height: 125px;
+          will-change: background-position;
+        }
+        @keyframes fly-cycle {
+          100% {
+          background-position: -900px 0;
+          }
         }
         .sky{
             position: absolute;
@@ -338,7 +350,20 @@
                 transform: rotate(-10deg);
             }
         }
-        .sun{
+
+         @keyframes lb{
+                    0%{
+                        transform: rotate(20deg);
+                    }
+                    50%{
+                        transform: rotate(0deg);
+                        background-color:white;
+                    }
+                    100%{
+                        transform: rotate(20deg);
+                    }
+                }
+.sun{
             position: relative;
             left:20px;
             top:30px;
@@ -385,6 +410,7 @@
 
 
     <div class="grass">
+
         <div class="body1">
             <div class="face">
                 <div class="ear-left"></div>
@@ -418,7 +444,6 @@
     <div class="s3"></div>
     <div class="s4"></div>
 </div>
-
 
 
 
